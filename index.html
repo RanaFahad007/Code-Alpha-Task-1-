@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="gallery-header">
+    <div class="header-content">
+      <div class="logo-section">
+        <span class="gallery-icon">🎨</span>
+        <div class="title-section">
+          <h1>Art Gallery</h1>
+          <p class="subtitle">Discover Beautiful Moments</p>
+        </div>
+      </div>
+      <div class="header-stats">
+        <div class="stat">
+          <span class="stat-number">16</span>
+          <span class="stat-label">Images</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Categories</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="city">City</button>
+    <button class="filter-btn" data-filter="family">Family</button>
+    <button class="filter-btn" data-filter="fruits">Fruits</button>
+  </section>
+  <section class="gallery masonry" id="gallery">
+    <!-- Nature -->
+    <div class="gallery-item" data-category="nature">
+      <img src="https://images.unsplash.com/photo-1590920966961-6850e6bb3075?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJlJTIwbGFrZXxlbnwwfHwwfHx8MA%3D%3D" alt="Nature Lake" />
+      <div class="caption">Nature Lake</div>
+    </div>
+    <div class="gallery-item" data-category="nature">
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjB2aWV3fGVufDB8fDB8fHww" alt="Mountain View" />
+      <div class="caption">Mountain View</div>
+    </div>
+    <div class="gallery-item" data-category="nature">
+      <img src="https://plus.unsplash.com/premium_photo-1665311552973-53cdaeaa52c3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9yZXN0JTIwcGF0aHxlbnwwfHwwfHx8MA%3D%3D " alt="Forest Path" />
+      <div class="caption">Forest Path</div>
+    </div>
+    <div class="gallery-item" data-category="nature">
+      <img src="https://images.unsplash.com/photo-1498855926480-d98e83099315?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlJTIwcml2ZXJ8ZW58MHx8MHx8fDA%3D" alt="Nature River" />
+      <div class="caption">Nature River</div>
+    </div>
+    <!-- City -->
+    <div class="gallery-item" data-category="city">
+      <img src="https://plus.unsplash.com/premium_photo-1692641346476-52a3e93a5aa0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2l0eSUyMHNreWxpam5lfGVufDB8fDB8fHww" alt="City Skyline" />
+      <div class="caption">City Skyline</div>
+    </div>
+    <div class="gallery-item" data-category="city">
+      <img src="https://plus.unsplash.com/premium_photo-1692641346476-52a3e93a5aa0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2l0eSUyMHNreWxpam5lfGVufDB8fDB8fHww" alt="Night City" />
+      <div class="caption">Night City</div>
+    </div>
+    <div class="gallery-item" data-category="city">
+      <img src="https://plus.unsplash.com/premium_photo-1692641346476-52a3e93a5aa0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2l0eSUyMHNreWxpam5lfGVufDB8fDB8fHww" alt="City Street" />
+      <div class="caption">City Street</div>
+    </div>
+    <div class="gallery-item" data-category="city">
+      <img src="https://images.unsplash.com/photo-1569261507256-b517950dbab6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNpdHklMjBhcmNoaXRlY3R1cmV8ZW58MHx8MHx8fDA%3D" alt="City Architecture" />
+      <div class="caption">City Architecture</div>
+    </div>
+    <!-- Family -->
+    <div class="gallery-item" data-category="family">
+      <img src="https://plus.unsplash.com/premium_photo-1678914045668-b1056b55a094?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmFtaWx5JTIwcGljbmljfGVufDB8fDB8fHww" alt="Family Picnic" />
+      <div class="caption">Family Picnic</div>
+    </div>
+    <div class="gallery-item" data-category="family">
+      <img src="https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFtaWx5JTIwdmFjYXRpb258ZW58MHx8MHx8fDA%3D" alt="Family Vacation" />
+      <div class="caption">Family Vacation</div>
+    </div>
+    <div class="gallery-item" data-category="family">
+      <img src="https://images.unsplash.com/photo-1581952976147-5a2d15560349?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZhbWlseSUyMHBvcnRyYWl0fGVufDB8fDB8fHww" alt="Family Portrait" />
+      <div class="caption">Family Portrait</div>
+    </div>
+    <div class="gallery-item" data-category="family">
+      <img src="https://plus.unsplash.com/premium_photo-1677666510092-a19a7e8712d0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmFtaWx5JTIwY2VsZWJyYXRpb258ZW58MHx8MHx8fDA%3D" alt="Family Celebration" />
+      <div class="caption">Family Celebration</div>
+    </div>
+    <!-- Fruits -->
+    <div class="gallery-item" data-category="fruits">
+      <img src="https://images.unsplash.com/photo-1498579397066-22750a3cb424?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlc2glMjBmcnVpdHN8ZW58MHx8MHx8fDA%3D" alt="Fresh Fruits" />
+      <div class="caption">Fresh Fruits</div>
+    </div>
+    <div class="gallery-item" data-category="fruits">
+      <img src="https://images.unsplash.com/photo-1498579397066-22750a3cb424?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlc2glMjBmcnVpdHN8ZW58MHx8MHx8fDA%3D" alt="Fruit Basket" />
+      <div class="caption">Fruit Basket</div>
+    </div>
+    <div class="gallery-item" data-category="fruits">
+      <img src="https://images.unsplash.com/photo-1498579397066-22750a3cb424?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlc2glMjBmcnVpdHN8ZW58MHx8MHx8fDA%3D" alt="Fruit Market" />
+      <div class="caption">Fruit Market</div>
+    </div>
+    <div class="gallery-item" data-category="fruits">
+      <img src="https://images.unsplash.com/photo-1604724386389-c1689554e485?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJlc2glMjBjbG9zZXVwfGVufDB8fDB8fHww" alt="Fruit Closeup" />
+      <div class="caption">Fruit Closeup</div>
+    </div>
+  </section>
+  <footer class="gallery-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Art Gallery</h3>
+        <p>Capturing life's beautiful moments through photography</p>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="#" class="social-link">📷 Instagram</a>
+          <a href="#" class="social-link">📘 Facebook</a>
+          <a href="#" class="social-link">🐦 Twitter</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Categories</h4>
+        <div class="footer-categories">
+          <span class="category-tag">Nature</span>
+          <span class="category-tag">City</span>
+          <span class="category-tag">Family</span>
+          <span class="category-tag">Fruits</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+    </div>
+  </footer>
+  <div class="lightbox" id="lightbox">
+    <span class="close" id="lightbox-close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Expanded Image" />
+    <button class="prev" id="prev-btn">&#10094;</button>
+    <button class="next" id="next-btn">&#10095;</button>
+  </div>
+  <script src="gallery.js"></script>
+</body>
+</html> 
